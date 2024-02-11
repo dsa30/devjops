@@ -4,12 +4,14 @@ import hamburger from "../logos/bars.png";
 
 const Header = () => {
   return (
-    <div>
+    <div className="header">
       <div className="container">
-        <img src={devjobs} alt="devjobs logo" />
-        <a href="#">
-          <img src={hamburger} />
-        </a>
+        <div className="header-content">
+          <img src={devjobs} alt="devjobs logo" />
+          <a href="#">
+            <img src={hamburger} />
+          </a>
+        </div>
       </div>
     </div>
   );

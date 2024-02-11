@@ -1,19 +1,21 @@
-import './App.css';
-import Card from './components/Card';
-import Header from './components/Header';
-import Button from './components/Button';
-import data from './data/data.json'
+import "./App.css";
+import Card from "./components/Card";
+import Header from "./components/Header";
+import Button from "./components/Button";
+import data from "./data/data.json";
 
 function App() {
   const companyData = [...data];
   return (
-    <div className="App" style={{backgroundColor: 'black'}}>
+    <div className="App">
       <Header />
-      <div className='container'>
-      <Card />
-      <Button>
-        Load More
-      </Button>
+      <div className="container">
+        <div className="card-container">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <Button>Load More</Button>
       </div>
     </div>
   );
