@@ -19,7 +19,7 @@ li {
 }
 
 .header {
-  background: url('../src/assets/logos/background.png');
+  background: url('./background.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem 1rem;
@@ -44,6 +44,9 @@ li {
   left: 30px;
   position: absolute;
   top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-image {

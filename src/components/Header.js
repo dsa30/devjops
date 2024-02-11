@@ -1,15 +1,15 @@
 import React from "react";
-import devjobs from "../assets/logos/devjobs.png";
-import hamburger from "../assets/logos/bars.png";
+import bar from "../bars.png";
+import logo from "../devjobs.png";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="container">
         <div className="header-content">
-          <img src={devjobs} alt="devjobs logo" />
+          <img src={logo} alt="devjobs logo" />
           <a href="#">
-            <img src={hamburger} />
+            <img src={bar} alt="hamburger menu bar" />
           </a>
         </div>
       </div>

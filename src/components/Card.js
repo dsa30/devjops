@@ -1,8 +1,4 @@
-import companyData from "../data/data.json";
-const Card = () => {
-  companyData.map((company) => {
-    console.log(typeof company.logo);
-  });
+const Card = ({ companyData }) => {
   return (
     <>
       {companyData.map((company) => (
