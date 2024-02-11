@@ -34,7 +34,7 @@ li {
 .card-container {
   display: grid;
   gap: 2rem;
-  padding: 8rem 0;
+  padding: 8rem 1rem;
 }
 
 .card-image {
@@ -46,15 +46,35 @@ li {
 }
 
 .card {
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 15px;
+  margin-bottom: 2rem;
   box-shadow: 0px 8px 28px 0px rgba(0,0,0,0.1);
   position: relative;
 }
 
 .card-time {
+  color: #6E8098;
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.card-title {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-logo-title {
+  color: #6E8098;
+  padding-bottom: 1rem;
+}
+
+.card-country {
+  color: #5964E0;
+  font-weight: bold;
 }
 
 .btn {
@@ -64,6 +84,13 @@ li {
   padding: 1.2rem 2rem;
   border-radius: 5px;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 8rem;
 }
 
 @media (min-width: 768px) {

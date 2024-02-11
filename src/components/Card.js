@@ -1,18 +1,24 @@
-import React from "react";
-import creative from "../logos/creative.svg";
-
-const Card = () => {
+const Card = ({ companyData }) => {
   return (
-    <div className="card">
-      <img className="card-image" src={creative} alt="blogr logo" />
-      <ul className="card-time">
-        <li>20h ago</li>
-        <li>Part Time</li>
-      </ul>
-      <h2>Haskell and PureScript Dev</h2>
-      <p>Blogr</p>
-      <p>United States</p>
-    </div>
+    <>
+      {companyData.map((company) => (
+        <div className="card" key={company.id}>
+          <img
+            className="card-image"
+            src={"." + company.logo}
+            alt={company.company}
+          />
+          <ul className="card-time">
+            <li>{company.postedAt}</li>
+            <li>.</li>
+            <li>{company.contract}</li>
+          </ul>
+          <h2 className="card-title">{company.position}</h2>
+          <p className="card-logo-title">{company.company}</p>
+          <p className="card-country">{company.location}</p>
+        </div>
+      ))}
+    </>
   );
 };
 

@@ -11,11 +11,11 @@ function App() {
       <Header />
       <div className="container">
         <div className="card-container">
-          <Card />
-          <Card />
-          <Card />
+          <Card companyData={companyData} />
         </div>
-        <Button>Load More</Button>
+        <div className="btn-container">
+          <Button>Load More</Button>
+        </div>
       </div>
     </div>
   );
