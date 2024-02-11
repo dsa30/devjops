@@ -1,13 +1,20 @@
-const Card = ({ companyData }) => {
+import companyData from "../data/data.json";
+const Card = () => {
+  companyData.map((company) => {
+    console.log(typeof company.logo);
+  });
   return (
     <>
       {companyData.map((company) => (
         <div className="card" key={company.id}>
-          <img
-            className="card-image"
-            src={"." + company.logo}
-            alt={company.company}
-          />
+          <div
+            className="card-image-content"
+            style={{
+              backgroundColor: `${company.logoBackground}`,
+            }}
+          >
+            <img className="card-image" src={company.logo} />
+          </div>
           <ul className="card-time">
             <li>{company.postedAt}</li>
             <li>.</li>

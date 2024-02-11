@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="container">
         <div className="card-container">
-          <Card companyData={companyData} />
+          <Card />
         </div>
         <div className="btn-container">
           <Button>Load More</Button>

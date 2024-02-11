@@ -1,6 +1,6 @@
 import React from "react";
-import devjobs from "../logos/devjobs.png";
-import hamburger from "../logos/bars.png";
+import devjobs from "../assets/logos/devjobs.png";
+import hamburger from "../assets/logos/bars.png";
 
 const Header = () => {
   return (
